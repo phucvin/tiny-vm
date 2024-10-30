@@ -41,7 +41,7 @@ void cycle() {
 
   unsigned long long instr = fetch();
 
-  // printf("\npc=%08x instr=%016llx\n", pc, instr);
+  printf("\npc=%08x instr=%016llx\n", pc, instr);
 
   /*
   0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
@@ -102,7 +102,7 @@ void cycle() {
       break;
   }
 
-  // debug_registers();
+  debug_registers();
 }
 
 bool load_program(const char *filename) {
@@ -158,7 +158,7 @@ int main(int argc, const char *argv[]) {
     cycle();
   }
 
-  debug_registers();
+  // debug_registers();
   // debug_ram();
 
   return EXIT_SUCCESS;

@@ -5,8 +5,8 @@
 
 ; $7 as return address
     li $7 end
-; $0 as argument n=30
-    li $0 0x1e
+; $0 as argument n=6
+    li $0 0x6
 ; call fib
     j fib
 end:
