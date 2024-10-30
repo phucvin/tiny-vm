@@ -3,7 +3,7 @@
 #include <stdint.h>
 #include <stdlib.h>
 
-#define NUM_REGS 8
+#define NUM_REGS 4
 #define RAM_SIZE 1024
 
 unsigned pc = 0;
