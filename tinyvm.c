@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 #define NUM_REGS 4
-#define RAM_SIZE 65535
+#define RAM_SIZE 128
 
 unsigned pc = 0;
 unsigned long long *program = NULL;
@@ -22,7 +22,7 @@ void debug_registers() {
 }
 
 void debug_ram() {
-  printf("ram\n");
+  printf("\nram\n");
 
   for(int i = 0; i <= RAM_SIZE; i++) {
     printf("%08x ", ram[i]);
