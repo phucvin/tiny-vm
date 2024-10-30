@@ -4,7 +4,7 @@
 li $1 0x00000000
 
 ; end
-li $2 0x0000000F
+li $2 0x0000003F
 
 ; memory location of loop start
 li $3 loop

@@ -154,10 +154,11 @@ int main(int argc, const char *argv[]) {
   }
 
   while(running) {
+    printf("\npc       instruction      $0       $1       $2       $3\n");
     cycle();
   }
 
-  //debug_ram();
+  // debug_ram();
 
   return EXIT_SUCCESS;
 }
