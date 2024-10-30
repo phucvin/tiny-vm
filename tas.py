@@ -2,7 +2,7 @@ from struct import *
 import sys
 
 if len(sys.argv) < 3:
-  print 'USAGE: as.py INFILE OUTFILE'
+  print('USAGE: as.py INFILE OUTFILE')
   sys.exit(1)
 
 lines = [line.strip() for line in open(sys.argv[1]) if line.strip() != '' and line.strip()[0] != ';']
@@ -46,7 +46,7 @@ for line in executable_lines:
   tokens = [token.strip() for token in line.split(' ')]
 
   if tokens[0] not in instructions:
-    print 'undefined instruction'
+    print('undefined instruction')
     continue
 
   fmt, instr = instructions[tokens[0]]
@@ -64,7 +64,7 @@ for line in executable_lines:
   elif fmt == 'xxxi':
     opcode += resolve(tokens[1])
 
-  print format(opcode, '016x'), line
+  print(format(opcode, '016x'), line)
 
   of.write(pack('<Q', opcode))
 
