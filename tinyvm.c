@@ -3,7 +3,7 @@
 #include <stdint.h>
 #include <stdlib.h>
 
-#define NUM_REGS 4
+#define NUM_REGS 8
 #define RAM_SIZE 128
 
 unsigned pc = 0;
@@ -154,7 +154,7 @@ int main(int argc, const char *argv[]) {
   }
 
   while(running) {
-    printf("\npc       instruction      $0       $1       $2       $3\n");
+    printf("\npc       instruction      $0       $1       $2       $3       $4       $5       $6       $7\n");
     cycle();
   }
 

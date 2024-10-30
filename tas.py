@@ -14,7 +14,9 @@ pc = 0
 for line in lines:
   if line[-1] == ':':
     jump_table[line[:-1]] = pc
-  pc += 1
+  else:
+    pc += 1
+print(jump_table)
 
 instructions = {
   'halt': ['xxxx', 0x0],
