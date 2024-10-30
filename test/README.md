@@ -20,3 +20,4 @@ TODO:
 - Add stack push & pop operations
 - Use direct threading dispatch or tail call dispatch
 - Use actual registers (i.e. asm syntax)
+- Accept stack-based bytecode, create register-based bytecode (with register allocation) to run
