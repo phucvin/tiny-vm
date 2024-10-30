@@ -15,5 +15,8 @@ make && python tas.py test/fib02.asm test/fib02.tvm && time ./tinyvm test/fib02.
 > 38.3s (for fib(38))
 
 TODO:
+- Add blt (branch if less than) operations
+- Add/Support add/sub with immediate value(s)
+- Add stack push & pop operations
 - Use direct threading dispatch or tail call dispatch
 - Use actual registers (i.e. asm syntax)
