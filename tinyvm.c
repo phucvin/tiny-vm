@@ -17,6 +17,7 @@ unsigned long long fetch() {
 }
 
 void debug_registers() {
+  printf("$0       $1       $2       $3       $4       $5       $6       $7\n");
   for(int i = 0; i < NUM_REGS; i++) printf("%08x ", r[i]);
   printf("\n");
 }
@@ -40,7 +41,7 @@ void cycle() {
 
   unsigned long long instr = fetch();
 
-  printf("%08x %016llx ", pc, instr);
+  // printf("\npc=%08x instr=%016llx\n", pc, instr);
 
   /*
   0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
@@ -101,7 +102,7 @@ void cycle() {
       break;
   }
 
-  debug_registers();
+  // debug_registers();
 }
 
 bool load_program(const char *filename) {
@@ -154,10 +155,10 @@ int main(int argc, const char *argv[]) {
   }
 
   while(running) {
-    printf("\npc       instruction      $0       $1       $2       $3       $4       $5       $6       $7\n");
     cycle();
   }
 
+  debug_registers();
   // debug_ram();
 
   return EXIT_SUCCESS;

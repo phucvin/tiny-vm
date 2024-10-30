@@ -16,7 +16,7 @@ for line in lines:
     jump_table[line[:-1]] = pc
   else:
     pc += 1
-print(jump_table)
+print('jump_table', jump_table)
 
 instructions = {
   'halt': ['xxxx', 0x0],

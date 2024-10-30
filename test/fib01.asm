@@ -8,8 +8,8 @@
     li $0 0x4
     sub $3 $3 $0
     sw $1 $3
-; push argument n=6 to stack
-    li $1 0x6
+; push argument n=30 to stack
+    li $1 0x1e
     li $0 0x4
     sub $3 $3 $0
     sw $1 $3
