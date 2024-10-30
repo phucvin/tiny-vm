@@ -8,8 +8,8 @@
     li $0 0x4
     sub $3 $3 $0
     sw $1 $3
-; $0 as argument n=38
-    li $0 0x26
+; $0 as argument n=6
+    li $0 0x6
 ; call fib
     j fib
 end:
