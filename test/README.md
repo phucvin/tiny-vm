@@ -13,3 +13,7 @@ make && python tas.py test/fib02.asm test/fib02.tvm && time ./tinyvm test/fib02.
 
 > 0.8s (for fib(30))
 > 38.3s (for fib(38))
+
+TODO:
+- Use direct threading dispatch or tail call dispatch
+- Use actual registers (i.e. asm syntax)
