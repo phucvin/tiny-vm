@@ -17,7 +17,7 @@ unsigned long long fetch() {
 }
 
 void debug_registers() {
-  printf("$0       $1       $2       $3       $4       $5       $6       $7\n");
+  printf("$0       $1       $2       $3\n");
   for(int i = 0; i < NUM_REGS; i++) printf("%08x ", r[i]);
   printf("\n");
 }
