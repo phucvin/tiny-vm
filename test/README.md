@@ -14,7 +14,7 @@ make && python tas.py test/fib02.asm test/fib02.tvm && time ./tinyvm test/fib02.
 > 0.8s (for fib(30))
 > 38.3s (for fib(38))
 
-TODO:
+TODO (probably continue in https://github.com/phucvin/vmgen-langs):
 - Add blt (branch if less than) operations
 - Add/Support add/sub with immediate value(s)
 - Add stack push & pop operations
